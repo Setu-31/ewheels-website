@@ -1,0 +1,889 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Discover E-Wheels electric bike rentals in Riga, Latvia. Explore our e-bikes, rental prices, included benefits and referral offers.">
+  <title>E-Wheels | Electric Bike Rentals in Riga</title>
+
+  <style>
+    :root {
+      --black: #10110f;
+      --dark: #191b17;
+      --yellow: #e8f35b;
+      --white: #ffffff;
+      --muted: #a8aca3;
+      --light: #f5f6f0;
+      --border: #e5e7df;
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .container {
+      width: min(1160px, 91%);
+      margin: auto;
+    }
+
+    .announcement {
+      background: var(--yellow);
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    header {
+      background: var(--black);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #30322d;
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .brand-icon {
+      display: grid;
+      place-items: center;
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 22px;
+    }
+
+    .brand span:last-child { color: var(--yellow); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      font-size: 13px;
+      color: #e1e2dc;
+    }
+
+    .nav-links a:hover { color: var(--yellow); }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid transparent;
+      border-radius: 100px;
+      padding: 13px 22px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s, background .2s;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-yellow {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    .button-outline {
+      border-color: #56594f;
+      color: white;
+      background: transparent;
+    }
+
+    .hero {
+      background: var(--black);
+      color: white;
+      overflow: hidden;
+      padding: 65px 0 78px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .eyebrow {
+      color: var(--yellow);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 19px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5.5vw, 70px);
+      line-height: 1.03;
+      letter-spacing: -3px;
+      max-width: 600px;
+      margin-bottom: 24px;
+    }
+
+    h1 span { color: var(--yellow); }
+
+    .hero-copy {
+      color: #c0c3b9;
+      max-width: 470px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-note {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+      margin-top: 34px;
+      color: #c8cbc1;
+      font-size: 12px;
+    }
+
+    .hero-note span::before {
+      content: "✓";
+      color: var(--yellow);
+      font-weight: 900;
+      margin-right: 7px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 405px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #292c23;
+    }
+
+    .hero-visual img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      object-fit: cover;
+      opacity: .79;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, #10110f 0%, transparent 65%);
+    }
+
+    .image-caption {
+      position: absolute;
+      z-index: 1;
+      left: 25px;
+      right: 25px;
+      bottom: 24px;
+    }
+
+    .image-caption strong { font-size: 23px; display: block; }
+    .image-caption span { color: #d2d5ca; font-size: 12px; }
+
+    .image-badge {
+      position: absolute;
+      z-index: 2;
+      top: 20px;
+      left: 20px;
+      background: var(--yellow);
+      color: var(--black);
+      border-radius: 50px;
+      padding: 8px 13px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    section { padding: 82px 0; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+
+    .section-heading p {
+      color: #6f736a;
+      font-size: 14px;
+      max-width: 360px;
+    }
+
+    .section-kicker {
+      color: #74786d;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 11px;
+    }
+
+    .bikes { background: var(--light); }
+
+    .bike-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .bike-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .bike-photo {
+      height: 265px;
+      position: relative;
+      background: #e5e7df;
+      overflow: hidden;
+    }
+
+    .bike-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s;
+    }
+
+    .bike-card:hover .bike-photo img { transform: scale(1.04); }
+
+    .bike-tag {
+      position: absolute;
+      top: 17px;
+      left: 17px;
+      background: var(--yellow);
+      padding: 7px 12px;
+      border-radius: 30px;
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .bike-content { padding: 25px; }
+
+    .bike-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 12px;
+      margin-bottom: 9px;
+    }
+
+    .bike-title-row h3 { font-size: 23px; letter-spacing: -.7px; }
+
+    .price {
+      font-size: 25px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .price small {
+      display: block;
+      text-align: right;
+      color: #85897f;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .bike-description {
+      color: #6e7268;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .spec {
+      padding: 13px;
+      background: var(--light);
+      border-radius: 12px;
+    }
+
+    .spec span {
+      display: block;
+      color: #777b71;
+      font-size: 10px;
+      margin-bottom: 4px;
+    }
+
+    .spec strong { font-size: 13px; }
+
+    .deposit {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .deposit strong { font-weight: 900; }
+
+    .bike-card .button { width: 100%; }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .benefit {
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 24px 19px;
+    }
+
+    .benefit-icon {
+      display: grid;
+      place-items: center;
+      width: 43px;
+      height: 43px;
+      background: var(--yellow);
+      border-radius: 13px;
+      font-size: 21px;
+      margin-bottom: 19px;
+    }
+
+    .benefit h3 { font-size: 15px; margin-bottom: 7px; }
+    .benefit p { color: #74786f; font-size: 12px; }
+
+    .referral { padding-top: 15px; }
+
+    .referral-panel {
+      background: var(--yellow);
+      border-radius: 28px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .referral-panel .section-kicker { color: #565b28; }
+    .referral-panel h2 {
+      font-size: clamp(30px, 4vw, 45px);
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+      max-width: 620px;
+    }
+
+    .referral-panel p { font-size: 14px; max-width: 570px; }
+
+    .referral-reward {
+      background: var(--black);
+      color: var(--yellow);
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(5deg);
+    }
+
+    .referral-reward strong { font-size: 38px; line-height: 1.1; }
+    .referral-reward span { font-size: 10px; font-weight: 800; }
+
+    .requirements { background: var(--light); }
+
+    .requirements-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .requirements-box .benefit-icon { flex-shrink: 0; }
+    .requirements-box h3 { margin: 4px 0 5px; font-size: 17px; }
+    .requirements-box p { color: #73776d; font-size: 13px; }
+
+    .contact {
+      background: var(--black);
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(35px, 5vw, 54px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .contact-copy {
+      color: #b9bdb2;
+      max-width: 440px;
+      font-size: 14px;
+      margin-bottom: 27px;
+    }
+
+    .contact-details {
+      background: #1c1e19;
+      border: 1px solid #34372f;
+      border-radius: 20px;
+      padding: 25px;
+    }
+
+    .contact-line {
+      padding: 13px 0;
+      border-bottom: 1px solid #34372f;
+    }
+
+    .contact-line:last-child { border-bottom: none; }
+
+    .contact-line span {
+      display: block;
+      color: #9da296;
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .contact-line strong { font-size: 15px; }
+
+    footer {
+      background: #0b0c0a;
+      color: #b1b5aa;
+      padding: 25px 0;
+      font-size: 11px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner a:hover { color: var(--yellow); }
+
+    @media (max-width: 800px) {
+      .nav { min-height: 68px; }
+      .nav-links { gap: 14px; }
+      .nav-links a:not(.button) { display: none; }
+      .hero { padding: 48px 0 55px; }
+      .hero-grid, .contact-grid { grid-template-columns: 1fr; gap: 35px; }
+      .hero-visual { min-height: 320px; }
+      .section-heading { align-items: start; flex-direction: column; }
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .referral-panel { padding: 32px; }
+    }
+
+    @media (max-width: 560px) {
+      .brand { font-size: 20px; }
+      .nav .button { padding: 11px 14px; font-size: 11px; }
+      h1 { letter-spacing: -2px; }
+      section { padding: 58px 0; }
+      .bike-grid { grid-template-columns: 1fr; }
+      .bike-photo { height: 230px; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .benefit { padding: 17px 13px; }
+      .referral-panel { grid-template-columns: 1fr; padding: 27px; }
+      .referral-reward { width: 110px; height: 110px; }
+      .referral-reward strong { font-size: 31px; }
+      .hero-note { gap: 10px; }
+      .specs { gap: 7px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    E-WHEELS · ELECTRIC BIKE RENTALS · RIGA, LATVIA
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="E-Wheels home">
+        <span class="brand-icon">↗</span>
+        <span>E-<span>WHEELS</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#bikes">Our bikes</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#referral">Referral</a>
+        <a class="button button-yellow" href="#contact">Contact us ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Move differently</p>
+          <h1>Your city.<br>Your ride.<br><span>Your freedom.</span></h1>
+          <p class="hero-copy">
+            Discover a more flexible way to explore Riga. Choose your electric
+            bike, check the rental details and contact E-Wheels to arrange your ride.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-yellow" href="#bikes">Explore our bikes ↘</a>
+            <a class="button button-outline" href="#contact">Ask about availability</a>
+          </div>
+
+          <div class="hero-note">
+            <span>Two e-bike options</span>
+            <span>Included benefits</span>
+            <span>Riga, Latvia</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <span class="image-badge">RIDE YOUR WAY</span>
+          <img
+            src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1100&q=85"
+            alt="Bicycle ready for a city ride"
+            fetchpriority="high"
+          >
+          <div class="image-caption">
+            <strong>Make every journey yours.</strong>
+            <span>Find the ride that fits your day.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bikes" id="bikes">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">CHOOSE YOUR RIDE</p>
+            <h2>Find your perfect e-bike.</h2>
+          </div>
+          <p>Compare our available models and contact us to confirm availability and rental details.</p>
+        </div>
+
+        <div class="bike-grid">
+          <article class="bike-card">
+            <div class="bike-photo">
+              <span class="bike-tag">MODEL 01</span>
+              <img
+                src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1000&q=85"
+                alt="Electric bicycle for a city ride"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="bike-content">
+              <div class="bike-title-row">
+                <h3>ENGWE / VITILAN</h3>
+                <div class="price">€150<small>Rental price</small></div>
+              </div>
+
+              <p class="bike-description">
+                A flexible electric bike option with an extra battery included.
+              </p>
+
+              <div class="specs">
+                <div class="spec">
+                  <span>Deposit</span>
+                  <strong>€50</strong>
+                </div>
+                <div class="spec">
+                  <span>Extra battery</span>
+                  <strong>FREE</strong>
+                </div>
+                <div class="spec">
+                  <span>Charging time</span>
+                  <strong>Approx. 5 hours</strong>
+                </div>
+                <div class="spec">
+                  <span>Included</span>
+                  <strong>Rental benefits</strong>
+                </div>
+              </div>
+
+              <div class="deposit">
+                <span>Availability</span>
+                <strong>Ask us first</strong>
+              </div>
+
+              <a class="button button-yellow"
+                 href="#contact"
+                 onclick="selectBike('ENGWE / VITILAN')">
+                Enquire about this bike ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="bike-card">
+            <div class="bike-photo">
+              <span class="bike-tag">MODEL 02</span>
+              <img
+                src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1000&q=85"
+                alt="Bicycle designed for everyday riding"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="bike-content">
+              <div class="bike-title-row">
+                <h3>CHARMRIDER</h3>
+                <div class="price">€160<small>Rental price</small></div>
+              </div>
+
+              <p class="bike-description">
+                A large-battery option for riders who prefer fewer charging breaks.
+              </p>
+
+              <div class="specs">
+                <div class="spec">
+                  <span>Deposit</span>
+                  <strong>€50</strong>
+                </div>
+                <div class="spec">
+                  <span>Battery</span>
+                  <strong>1 large battery</strong>
+                </div>
+                <div class="spec">
+                  <span>Charging time</span>
+                  <strong>Approx. 6 hours</strong>
+                </div>
+                <div class="spec">
+                  <span>Included</span>
+                  <strong>Rental benefits</strong>
+                </div>
+              </div>
+
+              <div class="deposit">
+                <span>Availability</span>
+                <strong>Ask us first</strong>
+              </div>
+
+              <a class="button button-yellow"
+                 href="#contact"
+                 onclick="selectBike('CHARMRIDER')">
+                Enquire about this bike ↗
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p style="color:#777b71;font-size:11px;margin-top:18px;">
+          Rental period, battery range, availability and final terms must be confirmed before booking.
+        </p>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">MORE INCLUDED</p>
+            <h2>Extra value with your ride.</h2>
+          </div>
+          <p>Useful extras and selected maintenance benefits are included with your rental.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit">
+            <div class="benefit-icon">📱</div>
+            <h3>Mobile holder</h3>
+            <p>Keep your phone accessible while navigating your route.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">🔒</div>
+            <h3>Chain lock</h3>
+            <p>A lock is included with your rental.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">🔧</div>
+            <h3>Flat tyre repair</h3>
+            <p>Repair included for up to two occasions, subject to rental terms.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">⚙️</div>
+            <h3>Brake pad replacement</h3>
+            <p>Free replacement under the stated rental benefits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="referral" id="referral">
+      <div class="container">
+        <div class="referral-panel">
+          <div>
+            <p class="section-kicker">SHARE THE RIDE</p>
+            <h2>Refer more than seven bikes. Get €100 off your rent.</h2>
+            <p>
+              Know people who need an e-bike? Refer more than seven bike rentals
+              to qualify for €100 off your rent. Contact E-Wheels to confirm
+              eligibility and the referral terms.
+            </p>
+            <div style="margin-top:23px;">
+              <a class="button"
+                 style="background:#10110f;color:#e8f35b;"
+                 href="#contact"
+                 onclick="selectBike('Referral programme')">
+                Ask about referrals ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="referral-reward" aria-label="100 euro reward">
+            <strong>€100</strong>
+            <span>RENT DISCOUNT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="requirements">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">BEFORE YOU RIDE</p>
+            <h2>A few important details.</h2>
+          </div>
+        </div>
+
+        <div class="requirements-box">
+          <div class="benefit-icon">🪪</div>
+          <div>
+            <h3>A driving licence is required</h3>
+            <p>
+              Please contact us before booking to confirm the applicable
+              licence requirements for your chosen e-bike and intended use.
+              Rental conditions, deposits and any other requirements will be
+              confirmed before the rental is agreed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">LET'S GET YOU MOVING</p>
+          <h2>Ready for your<br>next ride?</h2>
+          <p class="contact-copy">
+            Contact E-Wheels to ask about bike availability, rental periods,
+            deposits or the referral programme. We'll confirm the details with you.
+          </p>
+
+          <a class="button button-yellow"
+             id="whatsapp-main"
+             href="https://wa.me/37125627003"
+             target="_blank"
+             rel="noopener noreferrer">
+            Chat with us on WhatsApp ↗
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-line">
+            <span>BUSINESS</span>
+            <strong>E-Wheels Electric Bike Rentals</strong>
+          </div>
+          <div class="contact-line">
+            <span>LOCATION</span>
+            <strong>Riga, Latvia</strong>
+          </div>
+          <div class="contact-line">
+            <span>WHATSAPP / PHONE</span>
+            <strong>+371 25627003</strong>
+          </div>
+          <div class="contact-line">
+            <span>BOOKINGS</span>
+            <strong>Enquire directly for availability</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> E-Wheels. All rights reserved.</span>
+      <span>Electric bike rentals · Riga, Latvia</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function selectBike(bikeName) {
+      const message = "Hello E-Wheels! I would like to enquire about: " + bikeName +
+        ". Please share availability and rental details.";
+      const whatsappUrl = "https://wa.me/37125627003?text=" +
+        encodeURIComponent(message);
+
+      document.getElementById("whatsapp-main").href = whatsappUrl;
+    }
+  </script>
+</body>
+</html>
