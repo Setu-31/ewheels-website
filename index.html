@@ -3,234 +3,616 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111414">
-  <meta name="description" content="Explore E-Wheels electric bike rentals in Riga. Compare ENGWE EP-2 Pro, VITILAN V3 and ChamRider DTS425, then send a rental inquiry.">
-  <title>E-Wheels | Your City. Your Ride.</title>
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="Explore ENGWE EP-2 Pro, VITILAN V3 and ChamRider DTS425 electric bike rentals from E-Wheels in Riga, Latvia.">
+  <meta property="og:title" content="E-Wheels — Find Your Ride">
+  <meta property="og:description" content="Three electric bikes. One better way to get around Riga.">
+  <meta property="og:type" content="website">
+  <title>E-Wheels — Electric Bike Rentals in Riga</title>
+  <script>document.documentElement.classList.add('js');</script>
   <style>
-    :root{--ink:#171a1b;--muted:#666d70;--paper:#f5f5f2;--white:#fff;--line:rgba(23,26,27,.12);--lime:#c4f568;--lime-dark:#6d941e;--night:#111414;--night2:#1b2020;--card:#fff;--radius:26px;--shadow:0 18px 55px rgba(15,20,20,.09)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img{display:block;max-width:100%}.skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:12px;top:12px;z-index:100;background:#fff;padding:12px;border-radius:10px}
-    .header{position:sticky;top:0;z-index:50;background:rgba(245,245,242,.87);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(23,26,27,.08)}.nav{max-width:1240px;height:68px;margin:auto;padding:0 26px;display:flex;align-items:center;gap:28px}.brand{display:inline-flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.055em;font-size:17px;white-space:nowrap}.brand-mark{display:grid;place-items:center;width:29px;height:29px;background:var(--lime);color:#18200f;border-radius:10px;font-size:18px;line-height:1}.nav-links{display:flex;align-items:center;gap:27px;margin-left:auto;color:#43494b;font-size:13px}.nav-links a,.footer-links a{transition:color .2s}.nav-links a:hover,.footer-links a:hover{color:var(--lime-dark)}.pill-button,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:13px 19px;border:0;border-radius:999px;font-size:13px;font-weight:750;line-height:1.1;transition:transform .2s,background .2s,color .2s,border-color .2s}.pill-button,.button-dark{background:var(--ink);color:#fff}.pill-button:hover,.button-dark:hover{background:#323839;transform:translateY(-1px)}.button-lime{background:var(--lime);color:#1b2510}.button-lime:hover{background:#d4ff8c;transform:translateY(-1px)}.button-outline{border:1px solid rgba(255,255,255,.26);background:transparent;color:white}.button-outline:hover{border-color:var(--lime);color:var(--lime)}.menu-toggle{display:none;border:1px solid var(--line);border-radius:50%;width:42px;height:42px;background:transparent;font-size:22px;line-height:1}
-    .hero{background:var(--night);color:white;overflow:hidden}.hero-inner{max-width:1240px;margin:auto;padding:78px 26px 38px}.eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.17em;color:#a9b2af}.hero h1{font-size:clamp(53px,8vw,104px);line-height:.94;letter-spacing:-.082em;font-weight:760;margin:21px 0 21px;max-width:950px}.hero h1 span{color:var(--lime)}.hero-copy{font-size:clamp(16px,1.8vw,19px);line-height:1.7;color:#c4cac6;max-width:570px;margin:0 0 27px}.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.quiet-link{color:#e3e8e5;font-size:13px;padding:12px 9px;display:inline-flex;align-items:center;gap:8px}.quiet-link:hover{color:var(--lime)}
-    .showcase{margin-top:48px}.showcase-frame{height:clamp(350px,44vw,500px);min-height:350px;position:relative;overflow:hidden;border-radius:30px;background:linear-gradient(135deg,#242b29,#151919);isolation:isolate}.showcase-frame:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 75% 48%,rgba(196,245,104,.15),transparent 43%),linear-gradient(120deg,transparent 45%,rgba(255,255,255,.025))}.slide{position:absolute;inset:0;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:18px;padding:clamp(25px,5vw,62px);opacity:0;transform:translateX(18px);pointer-events:none;transition:opacity .45s ease,transform .45s ease}.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}.slide-copy{position:relative;z-index:2}.slide-count{color:var(--lime);font-weight:800;letter-spacing:.15em;font-size:11px}.slide h2{font-size:clamp(34px,5vw,62px);line-height:.98;letter-spacing:-.075em;margin:15px 0}.slide p{font-size:14px;line-height:1.7;color:#c7cdca;max-width:355px;margin:0}.slide-price{font-size:13px;color:#dfe4e1;margin:20px 0 22px}.slide-price strong{font-size:26px;letter-spacing:-.05em;color:white}.slide-image{width:100%;height:100%;max-height:385px;object-fit:contain;filter:drop-shadow(0 20px 28px rgba(0,0,0,.34))}.showcase-controls{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:15px}.slide-tabs{display:flex;gap:7px;flex-wrap:wrap}.slide-tab{border:1px solid #414946;border-radius:999px;background:transparent;color:#c5ceca;font-size:11px;font-weight:750;letter-spacing:.02em;padding:10px 15px;transition:all .2s}.slide-tab[aria-pressed="true"]{background:var(--lime);border-color:var(--lime);color:#18200f}.slide-arrows{display:flex;gap:8px}.circle-button{width:40px;height:40px;border-radius:50%;border:1px solid #414946;background:transparent;color:white;font-size:18px}.circle-button:hover{background:#303836;border-color:#65706b}
-    .section{max-width:1240px;margin:auto;padding:100px 26px}.section-top{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:36px}.section-kicker{color:var(--lime-dark);font-weight:850;text-transform:uppercase;font-size:11px;letter-spacing:.16em}.section h2{font-size:clamp(37px,5.4vw,63px);line-height:.99;letter-spacing:-.077em;margin:14px 0 0;max-width:720px}.section-intro{max-width:365px;color:var(--muted);font-size:14px;line-height:1.75;margin:0 0 4px}.bike-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.bike-card{display:flex;flex-direction:column;overflow:hidden;background:var(--card);border:1px solid rgba(23,26,27,.06);border-radius:var(--radius);transition:transform .25s,box-shadow .25s}.bike-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.bike-photo{height:250px;background:#ebeeea;position:relative;display:grid;place-items:center;overflow:hidden;padding:18px}.bike-photo img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transition:transform .35s}.bike-card:hover .bike-photo img{transform:scale(1.035)}.model-label{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.9);border:1px solid rgba(20,25,22,.05);border-radius:999px;padding:7px 10px;font-size:10px;letter-spacing:.1em;font-weight:850;z-index:2}.bike-content{padding:24px;display:flex;flex-direction:column;flex:1}.bike-title-row{display:flex;justify-content:space-between;align-items:start;gap:10px}.bike-title-row h3{font-size:23px;line-height:1.1;letter-spacing:-.06em;margin:0}.price{text-align:right;white-space:nowrap;font-weight:850;font-size:25px;line-height:1;letter-spacing:-.055em}.price small{display:block;color:var(--muted);font-size:10px;font-weight:500;letter-spacing:0;margin-top:6px}.bike-description{color:var(--muted);font-size:13px;line-height:1.7;min-height:46px;margin:16px 0 18px}.spec-list{list-style:none;padding:0;margin:0 0 22px;border-top:1px solid var(--line)}.spec-list li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.spec-list span{color:var(--muted)}.spec-list strong{text-align:right;font-weight:750}.bike-content .button{margin-top:auto;width:100%}
-    .benefits{background:#e9ece7}.benefits-inner{max-width:1240px;margin:auto;padding:82px 26px}.benefits-heading{font-size:clamp(36px,5vw,59px);line-height:1;letter-spacing:-.075em;margin:14px 0 0;max-width:670px}.benefits-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:34px}.benefit{background:rgba(255,255,255,.78);border:1px solid rgba(23,26,27,.04);border-radius:20px;min-height:164px;padding:23px 20px}.benefit-icon{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:#e5f6c9;color:#263718;font-size:18px;margin-bottom:19px}.benefit h3{font-size:15px;letter-spacing:-.03em;margin:0 0 8px}.benefit p{font-size:12px;color:var(--muted);line-height:1.65;margin:0}.small-print{color:var(--muted);font-size:12px;line-height:1.7;margin:22px 0 0}
-    .referral{background:var(--night);color:white}.referral-inner{max-width:1240px;padding:82px 26px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}.referral h2{font-size:clamp(39px,5.5vw,69px);line-height:.97;letter-spacing:-.078em;margin:15px 0 19px}.referral-copy{color:#c3cbc6;font-size:14px;line-height:1.75;max-width:520px;margin:0 0 26px}.referral-card{border-radius:28px;background:#202726;border:1px solid #3d4741;padding:32px}.referral-card .reward{font-size:clamp(52px,6vw,80px);line-height:1;letter-spacing:-.08em;font-weight:850;color:var(--lime);margin:18px 0 12px}.referral-card p{font-size:14px;line-height:1.7;color:#c3cbc6;margin:0}
-    .contact-section{background:white}.contact-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:52px;align-items:start}.contact-aside p{color:var(--muted);font-size:14px;line-height:1.8;max-width:400px}.contact-note{border-top:1px solid var(--line);padding-top:20px;margin-top:26px;color:var(--muted);font-size:12px;line-height:1.8}.contact-note strong{color:var(--ink)}.form-card{display:grid;grid-template-columns:1fr 1fr;gap:15px;background:var(--paper);padding:27px;border-radius:25px}.field{display:flex;flex-direction:column;gap:8px;min-width:0}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:780}.field input,.field select,.field textarea{width:100%;min-width:0;border:1px solid #dfe2dc;border-radius:12px;background:white;padding:13px 14px;color:var(--ink);outline:none;transition:border .2s,box-shadow .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:#85ad3e;box-shadow:0 0 0 3px rgba(196,245,104,.28)}.field textarea{min-height:112px;resize:vertical}.checkbox-line{display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:12px;line-height:1.55}.checkbox-line input{margin-top:2px;accent-color:#4a6e19}.form-help{font-size:12px;line-height:1.65;color:var(--muted);margin:0;grid-column:1/-1}.form-actions{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}.form-actions .button{flex:0 0 auto}.footer{background:#e9ece7}.footer-inner{max-width:1240px;margin:auto;padding:29px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{font-size:14px}.copyright{color:var(--muted);font-size:11px}.footer-links{display:flex;gap:20px;flex-wrap:wrap;color:#4e5654;font-size:12px}.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,18px);max-width:calc(100vw - 28px);width:max-content;opacity:0;pointer-events:none;z-index:90;padding:14px 18px;border-radius:14px;background:#161a18;color:white;font-size:13px;line-height:1.5;box-shadow:var(--shadow);transition:opacity .22s,transform .22s}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:940px){.nav{gap:16px}.nav-links{gap:17px}.bike-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bike-card:last-child{grid-column:1/-1}.bike-card:last-child .bike-photo{height:300px}.benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-grid{gap:28px}}
-    @media(max-width:680px){html{scroll-padding-top:69px}.nav{height:61px;padding:0 18px}.nav-cta{display:none}.menu-toggle{display:block;margin-left:auto}.nav-links{display:none;position:absolute;top:61px;left:0;right:0;background:rgba(245,245,242,.98);padding:12px 20px 20px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-links a{padding:14px 3px;border-bottom:1px solid var(--line)}.hero-inner{padding:56px 18px 26px}.hero h1{font-size:clamp(47px,12.7vw,74px)}.showcase{margin-top:34px}.showcase-frame{height:530px;min-height:530px}.slide{grid-template-columns:1fr;grid-template-rows:auto 1fr;align-items:start;gap:4px;padding:27px 22px 17px}.slide h2{font-size:43px}.slide p{font-size:13px;max-width:330px}.slide-price{margin:12px 0 16px}.slide-image{height:225px;max-height:225px;align-self:end}.showcase-controls{align-items:flex-start}.slide-tabs{gap:6px}.slide-tab{padding:9px 11px;font-size:10px}.circle-button{width:37px;height:37px}.section{padding:70px 18px}.section-top{display:block}.section-intro{margin-top:17px}.bike-grid{grid-template-columns:1fr}.bike-card:last-child{grid-column:auto}.bike-photo,.bike-card:last-child .bike-photo{height:265px}.benefits-inner{padding:66px 18px}.benefits-grid{gap:10px}.benefit{min-height:160px;padding:18px 15px}.referral-inner{padding:68px 18px;grid-template-columns:1fr;gap:27px}.contact-grid{grid-template-columns:1fr}.form-card{grid-template-columns:1fr;padding:18px}.field.full,.form-help,.form-actions{grid-column:1}.form-actions .button{width:100%}.footer-inner{padding:25px 18px}.footer-links{width:100%;gap:16px}}
-    @media(max-width:360px){.showcase-frame{height:560px;min-height:560px}.slide h2{font-size:38px}.slide-image{height:205px}.slide-tab{padding:8px 9px}.benefits-grid{grid-template-columns:1fr}.benefit{min-height:0}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+    :root {
+      --ink: #171817;
+      --muted: #6e706d;
+      --soft: #f5f5f2;
+      --paper: #ffffff;
+      --line: rgba(23,24,23,.12);
+      --lime: #d6f45a;
+      --lime-dark: #a9ca36;
+      --night: #141613;
+      --night2: #252a20;
+      --radius: 28px;
+      --shadow: 0 18px 60px rgba(20,22,18,.10);
+      --max: 1280px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    body.menu-open { overflow: hidden; }
+    img { max-width: 100%; display: block; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; text-decoration: none; }
+    button { color: inherit; }
+    :focus-visible { outline: 3px solid #87b414; outline-offset: 3px; }
+    .wrap { width: min(var(--max), calc(100% - 52px)); margin-inline: auto; }
+    .skip-link { position: absolute; left: 14px; top: -60px; z-index: 999; background: var(--ink); color: white; padding: 10px 14px; border-radius: 8px; }
+    .skip-link:focus { top: 10px; }
+    .announcement { min-height: 30px; display: grid; place-items: center; background: var(--lime); color: #202313; text-align: center; padding: 7px 14px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 850; }
+    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.9); backdrop-filter: saturate(160%) blur(18px); border-bottom: 1px solid rgba(23,24,23,.07); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 72px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; font-size: 20px; font-weight: 900; letter-spacing: -.06em; }
+    .brand-mark { width: 33px; height: 33px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--lime); font-size: 18px; line-height: 1; }
+    .brand-word span { color: #777b36; }
+    .nav-links { display: flex; align-items: center; gap: clamp(17px, 2.7vw, 34px); color: #3c3d3a; font-size: 13px; }
+    .nav-links a:not(.button):hover, .footer-links a:hover { color: #718b20; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 47px; padding: 13px 21px; border-radius: 999px; border: 1px solid transparent; font-weight: 750; font-size: 13px; line-height: 1.2; cursor: pointer; transition: transform .22s ease, background .22s ease, box-shadow .22s ease, border-color .22s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-dark { background: var(--ink); color: #fff; }
+    .button-dark:hover { background: #353833; box-shadow: 0 8px 18px rgba(0,0,0,.13); }
+    .button-lime { background: var(--lime); color: #1b1d13; }
+    .button-lime:hover { background: #e1ff6f; box-shadow: 0 8px 18px rgba(214,244,90,.18); }
+    .button-outline { color: white; border-color: rgba(255,255,255,.44); background: rgba(255,255,255,.02); }
+    .button-outline:hover { border-color: white; background: rgba(255,255,255,.08); }
+    .button-small { min-height: 41px; padding: 11px 17px; font-size: 12px; }
+    .menu-toggle { display: none; background: transparent; border: 0; padding: 9px; cursor: pointer; }
+    .menu-toggle svg { width: 24px; height: 24px; }
+
+    /* Hero product carousel */
+    .hero { padding: 26px 0 18px; background: var(--paper); }
+    .hero-viewport { position: relative; isolation: isolate; overflow: hidden; border-radius: 32px; background: var(--night); color: white; min-height: 650px; height: min(67vw, 760px); }
+    .hero-viewport::before { content: ""; position: absolute; inset: 0; z-index: -2; background: radial-gradient(ellipse at 76% 36%, #46503a 0%, #272b22 33%, #111310 74%); }
+    .hero-viewport::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(10,11,9,.58), rgba(10,11,9,.15) 55%, rgba(10,11,9,.03)); pointer-events: none; }
+    .hero-slide { position: absolute; inset: 0; display: grid; grid-template-columns: minmax(0,.92fr) minmax(0,1.08fr); align-items: center; gap: 3%; padding: clamp(28px, 6vw, 82px); opacity: 0; visibility: hidden; transform: translateX(28px) scale(.99); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.75,.25,1), visibility .7s; pointer-events: none; }
+    .hero-slide.active { opacity: 1; visibility: visible; transform: translateX(0) scale(1); pointer-events: auto; }
+    .hero-slide-content { z-index: 2; max-width: 610px; align-self: center; padding-bottom: 30px; }
+    .eyebrow { color: var(--lime); margin: 0 0 18px; font-size: 11px; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; }
+    .hero-title { margin: 0 0 22px; font-size: clamp(49px, 6.2vw, 90px); line-height: .96; letter-spacing: -.078em; font-weight: 760; }
+    .hero-title .lime { color: var(--lime); }
+    .hero-copy { max-width: 465px; color: rgba(255,255,255,.76); font-size: clamp(14px,1.45vw,17px); line-height: 1.7; margin: 0 0 28px; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .hero-price { margin-top: 25px; display: flex; align-items: baseline; gap: 11px; color: rgba(255,255,255,.65); font-size: 12px; }
+    .hero-price strong { color: #fff; font-size: 28px; letter-spacing: -.055em; }
+    .hero-art { align-self: stretch; min-width: 0; min-height: 350px; position: relative; display: grid; place-items: center; }
+    .hero-art::before { content: ""; width: 95%; aspect-ratio: 1; max-height: 530px; position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(214,244,90,.17), rgba(214,244,90,.025) 46%, transparent 72%); }
+    .hero-bike { position: relative; z-index: 2; width: 100%; height: 100%; max-height: 500px; object-fit: contain; object-position: center; padding: 10px; filter: drop-shadow(0 22px 28px rgba(0,0,0,.23)); transform: translateY(10px); transition: transform .8s cubic-bezier(.2,.75,.25,1); }
+    .hero-slide.active .hero-bike { transform: translateY(0); }
+    .bike-visual { background: #f0f1ed; border-radius: 27px; display: grid; place-items: center; overflow: hidden; min-height: 250px; width: 100%; height: 100%; }
+    .image-fallback { display: none; text-align: center; color: #52564b; font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 20px; }
+    .image-fallback svg { margin: 0 auto 15px; max-width: 180px; width: 58%; height: auto; color: #73786a; }
+    .bike-visual.image-failed .image-fallback { display: block; }
+    .bike-visual.image-failed img { display: none !important; }
+    .hero-controls { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 19px 4px 2px; }
+    .hero-tab-list { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .hero-tab { border: 1px solid #d7d9d2; background: #fff; color: #575b51; border-radius: 100px; padding: 10px 15px; cursor: pointer; font-size: 11px; font-weight: 800; letter-spacing: .03em; transition: background .2s, color .2s, border-color .2s; }
+    .hero-tab[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: white; }
+    .hero-control-right { display: flex; gap: 8px; align-items: center; }
+    .slider-arrow, .slider-pause { width: 39px; height: 39px; border-radius: 50%; border: 1px solid #d7d9d2; background: white; display: grid; place-items: center; cursor: pointer; transition: background .2s, color .2s; }
+    .slider-arrow:hover, .slider-pause:hover { background: var(--ink); color: white; border-color: var(--ink); }
+    .slider-pause { font-size: 12px; width: auto; padding: 0 13px; border-radius: 999px; font-weight: 700; }
+    .slider-status { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 11px; margin-left: 7px; }
+    .progress-track { width: clamp(35px,5vw,72px); height: 3px; background: #ddd; overflow: hidden; border-radius: 99px; }
+    .progress-bar { display: block; width: 0; height: 100%; background: var(--ink); }
+    .hero-viewport.running .progress-bar { animation: progress 6.5s linear forwards; }
+    @keyframes progress { from { width: 0; } to { width: 100%; } }
+
+    .section-intro { padding: 105px 0 38px; text-align: center; }
+    .section-kicker { color: #777b38; font-size: 10px; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; margin: 0 0 14px; }
+    .section-title { max-width: 850px; margin: 0 auto 17px; font-size: clamp(35px,5vw,62px); letter-spacing: -.07em; line-height: 1.02; font-weight: 750; }
+    .section-copy { max-width: 615px; margin: 0 auto; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .bikes-section { padding: 28px 0 105px; }
+    .product-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 17px; align-items: stretch; }
+    .product-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--soft); border-radius: var(--radius); border: 1px solid rgba(23,24,23,.05); transition: transform .35s ease, box-shadow .35s ease; }
+    .product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .product-art { min-height: 260px; height: clamp(245px,25vw,320px); position: relative; display: grid; place-items: center; overflow: hidden; padding: 20px; background: linear-gradient(145deg,#fff 0%,#e7e9e3 100%); }
+    .product-art::after { content: ""; position: absolute; bottom: 0; left: 8%; right: 8%; height: 1px; background: rgba(23,24,23,.08); }
+    .product-art img { width: 100%; height: 100%; object-fit: contain; object-position: center; mix-blend-mode: multiply; position: relative; z-index: 1; transition: transform .55s ease; }
+    .product-card:hover .product-art img { transform: scale(1.045); }
+    .product-number { position: absolute; top: 18px; left: 18px; z-index: 3; color: #777b72; font-size: 10px; font-weight: 850; letter-spacing: .13em; }
+    .product-body { padding: 25px 23px 23px; display: flex; flex-direction: column; flex: 1; }
+    .product-top { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+    .product-title { margin: 0; font-size: clamp(20px,2vw,26px); line-height: 1.12; letter-spacing: -.06em; font-weight: 780; }
+    .product-subtitle { margin: 6px 0 0; font-size: 9px; letter-spacing: .12em; font-weight: 800; color: #898b82; }
+    .price { flex: 0 0 auto; text-align: right; font-size: 25px; line-height: 1; font-weight: 800; letter-spacing: -.06em; white-space: nowrap; }
+    .price small { display: block; margin-top: 6px; font-size: 10px; letter-spacing: 0; color: var(--muted); font-weight: 500; }
+    .product-description { min-height: 46px; margin: 16px 0 17px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .spec-list { list-style: none; display: grid; padding: 0; margin: 0 0 20px; border-top: 1px solid var(--line); }
+    .spec-list li { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
+    .spec-list span { color: var(--muted); }
+    .spec-list strong { text-align: right; font-weight: 750; }
+    .product-card .button { width: 100%; margin-top: auto; }
+    .rental-note { text-align: center; margin: 20px auto 0; max-width: 820px; font-size: 11px; line-height: 1.7; color: var(--muted); }
+
+    .feature-promo { padding: 8px 0 100px; }
+    .promo-panel { min-height: 410px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border-radius: 30px; background: #e9ece4; }
+    .promo-copy { padding: clamp(32px,5.5vw,70px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+    .promo-copy h2 { margin: 0 0 18px; max-width: 560px; font-size: clamp(36px,5vw,58px); line-height: 1; letter-spacing: -.07em; }
+    .promo-copy p { max-width: 430px; margin: 0 0 25px; color: #60645a; font-size: 14px; line-height: 1.8; }
+    .promo-art { position: relative; min-height: 300px; background: radial-gradient(ellipse at 50% 47%, #d6e4ae, #c4d09e 44%, #dfe5d5 75%); display: grid; place-items: center; overflow: hidden; }
+    .promo-art::before, .promo-art::after { content: ""; border: 1px solid rgba(41,52,27,.12); border-radius: 50%; position: absolute; width: 75%; aspect-ratio: 1; }
+    .promo-art::after { width: 58%; }
+    .promo-orb { position: relative; z-index: 1; width: 190px; height: 190px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; font-size: 65px; box-shadow: 0 20px 55px rgba(53,70,23,.18); transform: rotate(-9deg); }
+
+    .benefits-section { background: var(--soft); padding: 98px 0; }
+    .section-heading-row { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 35px; }
+    .section-heading-row .section-title { margin: 0; max-width: 700px; }
+    .section-heading-row .section-copy { max-width: 355px; margin: 0 0 4px; font-size: 13px; }
+    .benefit-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 13px; }
+    .benefit-card { background: white; border-radius: 22px; padding: 25px 22px; min-height: 175px; border: 1px solid rgba(23,24,23,.04); transition: transform .3s ease, box-shadow .3s ease; }
+    .benefit-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .benefit-icon { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; background: #eff6d9; color: #454d24; margin-bottom: 20px; font-size: 20px; font-weight: 800; }
+    .benefit-card h3 { margin: 0 0 9px; font-size: 15px; letter-spacing: -.03em; }
+    .benefit-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .fineprint { margin: 23px 0 0; font-size: 11px; line-height: 1.7; color: var(--muted); }
+
+    .referral-section { padding: 95px 0; }
+    .referral-panel { background: var(--night); color: white; border-radius: 30px; padding: clamp(35px,6vw,76px); display: grid; grid-template-columns: minmax(0,1.2fr) minmax(240px,.8fr); gap: 50px; align-items: center; overflow: hidden; position: relative; isolation: isolate; }
+    .referral-panel::before { content: ""; position: absolute; width: 600px; height: 600px; border-radius: 50%; right: -180px; top: -230px; background: radial-gradient(circle, rgba(214,244,90,.17), transparent 68%); z-index: -1; }
+    .referral-panel h2 { max-width: 670px; margin: 0 0 19px; font-size: clamp(39px,5.8vw,68px); line-height: .98; letter-spacing: -.075em; }
+    .referral-panel p { max-width: 550px; margin: 0 0 25px; color: rgba(255,255,255,.72); font-size: 14px; line-height: 1.8; }
+    .reward-card { padding: 29px; border-radius: 25px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.055); backdrop-filter: blur(10px); }
+    .reward-kicker { color: var(--lime); font-size: 10px; font-weight: 850; text-transform: uppercase; letter-spacing: .16em; }
+    .reward-amount { margin: 13px 0 0; font-size: clamp(61px,8vw,95px); font-weight: 820; letter-spacing: -.09em; line-height: .95; }
+    .reward-card p { margin: 15px 0 0; font-size: 13px; }
+
+    .faq-section { padding: 15px 0 100px; }
+    .faq-layout { display: grid; grid-template-columns: .78fr 1.22fr; gap: 65px; align-items: start; }
+    .faq-layout .section-title { margin: 0; font-size: clamp(37px,5vw,56px); }
+    .faq-lead { margin-top: 17px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-item summary { position: relative; list-style: none; padding: 20px 36px 20px 0; font-size: 14px; line-height: 1.5; font-weight: 750; cursor: pointer; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; position: absolute; right: 4px; top: 16px; font-size: 24px; font-weight: 400; transition: transform .2s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-answer { padding: 0 20px 18px 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .faq-answer p { margin: 0; }
+
+    .contact-section { background: #f6f6f3; padding: 95px 0; }
+    .contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start; }
+    .contact-layout h2 { margin: 0 0 18px; font-size: clamp(39px,5.6vw,66px); line-height: .98; letter-spacing: -.075em; }
+    .contact-lead { max-width: 415px; color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0 0 24px; }
+    .contact-details { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 21px; display: grid; gap: 13px; color: #4d5049; font-size: 12px; }
+    .contact-details span { display: inline-block; min-width: 90px; color: var(--muted); }
+    .contact-details a { text-decoration: underline; text-underline-offset: 3px; }
+    .contact-form { padding: clamp(22px,3.3vw,38px); border-radius: 27px; background: white; border: 1px solid rgba(23,24,23,.07); box-shadow: 0 14px 40px rgba(20,22,18,.04); }
+    .contact-form h3 { margin: 0 0 8px; font-size: 24px; letter-spacing: -.05em; }
+    .form-note { margin: 0 0 24px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+    .field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; min-width: 0; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: #393b36; font-size: 11px; font-weight: 800; }
+    .field input, .field select, .field textarea { width: 100%; min-height: 46px; padding: 12px 13px; border: 1px solid #dfe0da; border-radius: 11px; background: #fff; color: var(--ink); outline: none; font-size: 13px; transition: border-color .2s, box-shadow .2s; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: #8cac2a; box-shadow: 0 0 0 3px rgba(214,244,90,.25); }
+    .field textarea { resize: vertical; min-height: 104px; }
+    .checkbox-row { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 18px; font-size: 11px; color: #55584f; line-height: 1.6; }
+    .checkbox-row input { margin-top: 2px; accent-color: #7e9c22; flex: 0 0 auto; }
+    .contact-form .button { width: 100%; }
+    .form-result { display: none; margin-top: 15px; border-radius: 12px; background: #eef6d8; padding: 14px; color: #323b1e; font-size: 12px; line-height: 1.7; }
+    .form-result.show { display: block; }
+    .form-result a { text-decoration: underline; font-weight: 800; }
+    .form-fineprint { margin: 13px 0 0; text-align: center; color: #85877f; font-size: 10px; line-height: 1.6; }
+
+    .footer { background: #e9ebe5; padding: 33px 0 25px; }
+    .footer-top { display: flex; justify-content: space-between; align-items: center; gap: 25px; padding-bottom: 27px; border-bottom: 1px solid rgba(23,24,23,.12); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 11px; color: #575a52; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding-top: 20px; color: #777a71; font-size: 10px; line-height: 1.6; }
+    .back-top { color: var(--ink); font-weight: 800; }
+    .toast { position: fixed; left: 50%; bottom: 20px; transform: translate(-50%,18px); opacity: 0; pointer-events: none; z-index: 200; padding: 13px 17px; border-radius: 12px; background: var(--ink); color: white; max-width: calc(100vw - 28px); font-size: 12px; box-shadow: var(--shadow); transition: opacity .25s ease, transform .25s ease; }
+    .toast.show { opacity: 1; transform: translate(-50%,0); }
+    .js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s cubic-bezier(.2,.75,.25,1); }
+    .js .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .js .reveal-delay-1 { transition-delay: .08s; }
+    .js .reveal-delay-2 { transition-delay: .16s; }
+    .js .reveal-delay-3 { transition-delay: .24s; }
+    @media (max-width: 980px) {
+      .hero-viewport { height: 690px; }
+      .hero-slide { grid-template-columns: 1fr .85fr; padding: 42px; }
+      .hero-title { font-size: clamp(46px,6vw,67px); }
+      .hero-art { min-height: 300px; }
+      .product-grid { gap: 12px; }
+      .product-art { height: 250px; padding: 14px; }
+      .product-body { padding: 21px 17px; }
+      .price { font-size: 22px; }
+      .benefit-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .contact-layout { gap: 35px; }
+      .faq-layout { gap: 35px; }
+    }
+    @media (max-width: 700px) {
+      .wrap { width: min(var(--max), calc(100% - 32px)); }
+      .announcement { font-size: 9px; letter-spacing: .1em; }
+      .nav { min-height: 63px; }
+      .brand { font-size: 18px; }
+      .brand-mark { width: 30px; height: 30px; }
+      .menu-toggle { display: block; }
+      .nav-links { display: none; position: absolute; top: 63px; left: 0; right: 0; padding: 12px 20px 22px; background: rgba(255,255,255,.98); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; box-shadow: 0 18px 25px rgba(0,0,0,.06); }
+      .nav-links.open { display: flex; }
+      .nav-links a:not(.button) { padding: 14px 3px; border-bottom: 1px solid var(--line); }
+      .nav-links .button { margin-top: 14px; }
+      .hero { padding-top: 15px; }
+      .hero-viewport { min-height: 780px; height: auto; border-radius: 25px; }
+      .hero-slide { grid-template-columns: 1fr; grid-template-rows: auto minmax(235px,1fr); align-items: start; padding: 33px 25px 27px; gap: 10px; }
+      .hero-slide-content { padding: 0; }
+      .hero-title { font-size: clamp(45px,12vw,64px); margin-bottom: 16px; }
+      .hero-copy { font-size: 13px; max-width: 440px; margin-bottom: 20px; }
+      .hero-actions { gap: 9px; }
+      .hero-actions .button { min-height: 44px; padding: 12px 16px; font-size: 12px; }
+      .hero-price { margin-top: 14px; }
+      .hero-art { min-height: 230px; }
+      .hero-bike { max-height: 275px; }
+      .hero-controls { align-items: flex-start; flex-direction: column; padding-top: 14px; }
+      .hero-tab-list { width: 100%; }
+      .hero-tab { padding: 9px 12px; font-size: 10px; }
+      .hero-control-right { width: 100%; justify-content: space-between; }
+      .section-intro { padding: 75px 0 28px; }
+      .section-title { font-size: clamp(34px,9vw,48px); }
+      .section-copy { font-size: 13px; }
+      .bikes-section { padding-bottom: 70px; }
+      .product-grid { grid-template-columns: 1fr; gap: 16px; }
+      .product-art { height: 300px; }
+      .product-body { padding: 24px; }
+      .product-title { font-size: 27px; }
+      .product-description { min-height: 0; }
+      .feature-promo { padding-bottom: 70px; }
+      .promo-panel { grid-template-columns: 1fr; }
+      .promo-copy { padding: 32px 25px 35px; }
+      .promo-art { min-height: 250px; }
+      .promo-orb { width: 150px; height: 150px; font-size: 53px; }
+      .benefits-section { padding: 70px 0; }
+      .section-heading-row { display: block; margin-bottom: 25px; }
+      .section-heading-row .section-title { margin-bottom: 15px; }
+      .section-heading-row .section-copy { margin: 0; }
+      .benefit-grid { gap: 9px; }
+      .benefit-card { padding: 19px 15px; min-height: 165px; }
+      .benefit-icon { width: 37px; height: 37px; margin-bottom: 15px; }
+      .referral-section { padding: 70px 0; }
+      .referral-panel { grid-template-columns: 1fr; padding: 31px 24px; gap: 24px; border-radius: 25px; }
+      .reward-card { padding: 25px; }
+      .reward-amount { font-size: 70px; }
+      .faq-section { padding: 0 0 70px; }
+      .faq-layout { grid-template-columns: 1fr; gap: 25px; }
+      .faq-layout .section-title { font-size: 45px; }
+      .contact-section { padding: 70px 0; }
+      .contact-layout { grid-template-columns: 1fr; gap: 35px; }
+      .contact-layout h2 { font-size: 48px; }
+      .field-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .contact-form { padding: 23px 18px; border-radius: 20px; }
+      .footer-top { align-items: flex-start; flex-direction: column; gap: 20px; }
+      .footer-links { gap: 14px 18px; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .js .reveal { opacity: 1; transform: none; }
+    }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="E-Wheels home"><span class="brand-mark" aria-hidden="true">↗</span><span>E-WHEELS</span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#bikes">Our bikes</a><a href="#benefits">What's included</a><a href="#referral">Referral</a><a href="#contact">Contact</a>
-      </div>
-      <a class="pill-button nav-cta" href="#contact">Book a ride <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">☰</button>
-    </nav>
+  <div class="announcement">E-bike rentals in Riga · Find your next ride</div>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="E-Wheels home"><span class="brand-mark" aria-hidden="true">↗</span><span class="brand-word">E-<span>WHEELS</span></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#bikes">Our bikes</a><a href="#benefits">What's included</a><a href="#referral">Referral</a><a href="#faq">FAQ</a><a class="button button-dark button-small" href="#contact">Contact E-Wheels <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <div class="eyebrow">Electric bike rentals · Riga, Latvia</div>
-        <h1>Your city.<br><span>Your ride.</span> Your freedom.</h1>
-        <p class="hero-copy">Meet an easier, electric way to move through the city. Choose your bike, tell us when you want to ride, and let’s get you moving.</p>
-        <div class="hero-actions"><a class="button button-lime" href="#bikes">Explore the bikes <span aria-hidden="true">↓</span></a><a class="quiet-link" href="#contact">Ask about availability <span aria-hidden="true">↗</span></a></div>
-
-        <div class="showcase" id="showcase" aria-label="Featured bikes carousel">
-          <div class="showcase-frame" id="showcaseFrame" aria-live="polite">
-            <article class="slide active" data-slide="0" aria-hidden="false">
-              <div class="slide-copy"><div class="slide-count">01 / ENGWE EP-2 PRO</div><h2>Made for<br>the everyday escape.</h2><p>A confident city ride, with an extra battery included free.</p><div class="slide-price"><strong>€140</strong> · rental price</div><a class="button button-lime" href="#contact" data-bike-link="ENGWE EP-2 Pro">Inquire about ENGWE ↗</a></div>
-              <img class="slide-image" src="./Engwe%20Ep-2pro.jpg" alt="ENGWE EP-2 Pro electric bike" fetchpriority="high">
-            </article>
-            <article class="slide" data-slide="1" aria-hidden="true">
-              <div class="slide-copy"><div class="slide-count">02 / VITILAN V3</div><h2>Go further.<br>Feel the freedom.</h2><p>A different bike, a different look, and an extra battery included free.</p><div class="slide-price"><strong>€140</strong> · rental price</div><a class="button button-lime" href="#contact" data-bike-link="VITILAN V3">Inquire about VITILAN ↗</a></div>
-              <img class="slide-image" src="./Vitilan%20V3.jif" alt="VITILAN V3 electric bike" loading="lazy">
-            </article>
-            <article class="slide" data-slide="2" aria-hidden="true">
-              <div class="slide-copy"><div class="slide-count">03 / CHAMRIDER DTS425</div><h2>Long rides.<br>Less interruption.</h2><p>A large-battery option for riders who prefer fewer charging breaks.</p><div class="slide-price"><strong>€150</strong> · rental price</div><a class="button button-lime" href="#contact" data-bike-link="ChamRider DTS425">Inquire about ChamRider ↗</a></div>
-              <img class="slide-image" src="./ChamRider%20DTS425.jpg" alt="ChamRider DTS425 electric bike" loading="lazy">
-            </article>
+    <section class="hero" id="home" aria-label="Featured electric bikes">
+      <div class="wrap">
+        <div class="hero-viewport running" id="heroViewport" aria-roledescription="carousel" aria-label="Featured E-Wheels bikes">
+          <article class="hero-slide active" data-slide="0" aria-hidden="false">
+            <div class="hero-slide-content">
+              <p class="eyebrow">01 / ENGWE EP-2 PRO</p>
+              <h1 class="hero-title">Your city.<br>Your rhythm.<br><span class="lime">Your ride.</span></h1>
+              <p class="hero-copy">A folding fat-tire e-bike for the everyday escape. Explore the city your way, with an extra battery included.</p>
+              <div class="hero-actions"><a class="button button-lime" href="#bikes">Explore the bikes <span aria-hidden="true">↓</span></a><a class="button button-outline select-bike-link" href="#contact" data-bike="ENGWE EP-2 Pro">Enquire about ENGWE ↗</a></div>
+              <div class="hero-price"><strong>€140</strong><span>Rental price · €50 deposit</span></div>
+            </div>
+            <div class="hero-art">
+              <div class="bike-visual">
+                <img class="hero-bike" src="./Engwe%20Ep-2pro.jpg" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/Engwe%20Ep-2pro.jpg" alt="ENGWE EP-2 Pro electric bike" fetchpriority="high">
+                <div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>ENGWE EP-2 PRO</div>
+              </div>
+            </div>
+          </article>
+          <article class="hero-slide" data-slide="1" aria-hidden="true" inert>
+            <div class="hero-slide-content">
+              <p class="eyebrow">02 / VITILAN V3</p>
+              <h2 class="hero-title">Take the long way.<br><span class="lime">Love the ride.</span></h2>
+              <p class="hero-copy">A different bike with its own character. The VITILAN V3 comes with an extra battery included in the rental package.</p>
+              <div class="hero-actions"><a class="button button-lime" href="#bikes">Meet the VITILAN <span aria-hidden="true">↓</span></a><a class="button button-outline select-bike-link" href="#contact" data-bike="VITILAN V3">Enquire about VITILAN ↗</a></div>
+              <div class="hero-price"><strong>€140</strong><span>Rental price · €50 deposit</span></div>
+            </div>
+            <div class="hero-art"><div class="bike-visual">
+              <img class="hero-bike" src="./Vitilan%20V3.jfif" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/Vitilan%20V3.jfif" alt="VITILAN V3 electric bike" loading="lazy">
+              <div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>VITILAN V3</div>
+            </div></div>
+          </article>
+          <article class="hero-slide" data-slide="2" aria-hidden="true" inert>
+            <div class="hero-slide-content">
+              <p class="eyebrow">03 / CHAMRIDER DTS425</p>
+              <h2 class="hero-title">More room to roam.<br><span class="lime">More ride.</span></h2>
+              <p class="hero-copy">A large-battery option for riders who prefer fewer charging interruptions. Pick your dates and ask us about availability.</p>
+              <div class="hero-actions"><a class="button button-lime" href="#bikes">Explore ChamRider <span aria-hidden="true">↓</span></a><a class="button button-outline select-bike-link" href="#contact" data-bike="ChamRider DTS425">Enquire about ChamRider ↗</a></div>
+              <div class="hero-price"><strong>€150</strong><span>Rental price · €50 deposit</span></div>
+            </div>
+            <div class="hero-art"><div class="bike-visual">
+              <img class="hero-bike" src="./ChamRider%20DTS425.jpg" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/ChamRider%20DTS425.jpg" alt="ChamRider DTS425 electric bike" loading="lazy">
+              <div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>CHAMRIDER DTS425</div>
+            </div></div>
+          </article>
+        </div>
+        <div class="hero-controls">
+          <div class="hero-tab-list" role="group" aria-label="Choose featured bike">
+            <button class="hero-tab" type="button" data-go="0" aria-pressed="true">ENGWE EP-2 PRO</button>
+            <button class="hero-tab" type="button" data-go="1" aria-pressed="false">VITILAN V3</button>
+            <button class="hero-tab" type="button" data-go="2" aria-pressed="false">CHAMRIDER DTS425</button>
           </div>
-          <div class="showcase-controls">
-            <div class="slide-tabs" role="group" aria-label="Select featured bike"><button class="slide-tab" type="button" data-go="0" aria-pressed="true">ENGWE</button><button class="slide-tab" type="button" data-go="1" aria-pressed="false">VITILAN</button><button class="slide-tab" type="button" data-go="2" aria-pressed="false">CHAMRIDER</button></div>
-            <div class="slide-arrows"><button class="circle-button" id="prevSlide" type="button" aria-label="Previous bike">←</button><button class="circle-button" id="nextSlide" type="button" aria-label="Next bike">→</button></div>
+          <div class="hero-control-right">
+            <button class="slider-pause" id="sliderPause" type="button" aria-pressed="false" aria-label="Pause automatic slide rotation">Ⅱ Pause</button>
+            <button class="slider-arrow" id="prevSlide" type="button" aria-label="Previous bike">←</button>
+            <button class="slider-arrow" id="nextSlide" type="button" aria-label="Next bike">→</button>
+            <span class="slider-status"><span id="slideCounter">01 / 03</span><span class="progress-track"><span class="progress-bar" id="progressBar"></span></span></span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="bikes">
-      <div class="section-top"><div><div class="section-kicker">Choose your ride</div><h2>Three bikes.<br>One better way to move.</h2></div><p class="section-intro">Compare each model separately, check the listed rental details, and send us an inquiry for your preferred bike.</p></div>
-      <div class="bike-grid">
-        <article class="bike-card"><div class="bike-photo"><span class="model-label">MODEL 01</span><img src="./Engwe%20Ep-2pro.jpg" alt="ENGWE EP-2 Pro electric bike" loading="lazy"></div><div class="bike-content"><div class="bike-title-row"><h3>ENGWE<br>EP-2 Pro</h3><div class="price">€140<small>Rental price</small></div></div><p class="bike-description">A flexible electric-bike option for everyday exploring and city rides.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Extra battery</span><strong>Included free</strong></li><li><span>Charging time</span><strong>Approx. 5 hours</strong></li></ul><button class="button button-dark inquire-bike" type="button" data-bike="ENGWE EP-2 Pro">Ask about this bike ↗</button></div></article>
-        <article class="bike-card"><div class="bike-photo"><span class="model-label">MODEL 02</span><img src="./Vitilan%20V3.jif" alt="VITILAN V3 electric bike" loading="lazy"></div><div class="bike-content"><div class="bike-title-row"><h3>VITILAN<br>V3</h3><div class="price">€140<small>Rental price</small></div></div><p class="bike-description">A completely separate model with its own look and riding style.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Extra battery</span><strong>Included free</strong></li><li><span>Charging time</span><strong>Approx. 5 hours</strong></li></ul><button class="button button-dark inquire-bike" type="button" data-bike="VITILAN V3">Ask about this bike ↗</button></div></article>
-        <article class="bike-card"><div class="bike-photo"><span class="model-label">MODEL 03</span><img src="./ChamRider%20DTS425.jpg" alt="ChamRider DTS425 electric bike" loading="lazy"></div><div class="bike-content"><div class="bike-title-row"><h3>ChamRider<br>DTS425</h3><div class="price">€150<small>Rental price</small></div></div><p class="bike-description">A large-battery setup for riders who want fewer charging interruptions.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Battery</span><strong>1 large battery</strong></li><li><span>Charging time</span><strong>Approx. 6 hours</strong></li></ul><button class="button button-dark inquire-bike" type="button" data-bike="ChamRider DTS425">Ask about this bike ↗</button></div></article>
+    <section class="section-intro reveal" aria-labelledby="collection-title">
+      <div class="wrap"><p class="section-kicker">The E-Wheels collection</p><h2 class="section-title" id="collection-title">Three bikes.<br>Find the one that fits your day.</h2><p class="section-copy">Compare each model, check the included features and send us a quick enquiry. We’ll confirm availability and the rental terms with you directly.</p></div>
+    </section>
+
+    <section class="bikes-section" id="bikes" aria-label="Available electric bikes">
+      <div class="wrap">
+        <div class="product-grid">
+          <article class="product-card reveal" id="engwe">
+            <div class="product-art"><span class="product-number">01 / ENGWE</span><img class="product-bike" src="./Engwe%20Ep-2pro.jpg" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/Engwe%20Ep-2pro.jpg" alt="ENGWE EP-2 Pro electric bicycle" loading="lazy"><div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>ENGWE EP-2 PRO</div></div>
+            <div class="product-body"><div class="product-top"><div><h3 class="product-title">ENGWE EP-2 Pro</h3><p class="product-subtitle">FOLDING FAT-TIRE E-BIKE</p></div><div class="price">€140<small>Rental price</small></div></div><p class="product-description">A folding electric bike for everyday city exploring, with an extra battery included.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Extra battery</span><strong>Included free</strong></li><li><span>Charging time</span><strong>Approx. 5 hours</strong></li></ul><button class="button button-dark enquire-button" type="button" data-bike="ENGWE EP-2 Pro">Enquire about ENGWE ↗</button></div>
+          </article>
+          <article class="product-card reveal reveal-delay-1" id="vitilan">
+            <div class="product-art"><span class="product-number">02 / VITILAN</span><img class="product-bike" src="./Vitilan%20V3.jfif" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/Vitilan%20V3.jfif" alt="VITILAN V3 electric bicycle" loading="lazy"><div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>VITILAN V3</div></div>
+            <div class="product-body"><div class="product-top"><div><h3 class="product-title">VITILAN V3</h3><p class="product-subtitle">ELECTRIC FAT-TIRE BIKE</p></div><div class="price">€140<small>Rental price</small></div></div><p class="product-description">A distinct model with its own look and an extra battery included in the rental package.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Extra battery</span><strong>Included free</strong></li><li><span>Charging time</span><strong>Approx. 5 hours*</strong></li></ul><button class="button button-dark enquire-button" type="button" data-bike="VITILAN V3">Enquire about VITILAN ↗</button></div>
+          </article>
+          <article class="product-card reveal reveal-delay-2" id="chamrider">
+            <div class="product-art"><span class="product-number">03 / CHAMRIDER</span><img class="product-bike" src="./ChamRider%20DTS425.jpg" data-fallback="https://raw.githubusercontent.com/Setu-31/ewheels-website/main/ChamRider%20DTS425.jpg" alt="ChamRider DTS425 electric bicycle" loading="lazy"><div class="image-fallback" aria-hidden="true"><svg viewBox="0 0 220 135" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="47" cy="91" r="27"/><circle cx="173" cy="91" r="27"/><path d="M47 91 79 45 113 91H47l29-42h35l34 42M82 45h-17M113 91l28-45h13"/></svg>CHAMRIDER DTS425</div></div>
+            <div class="product-body"><div class="product-top"><div><h3 class="product-title">ChamRider DTS425</h3><p class="product-subtitle">LONG-RANGE RIDING OPTION</p></div><div class="price">€150<small>Rental price</small></div></div><p class="product-description">A large-battery option for riders who prefer fewer charging interruptions.</p><ul class="spec-list"><li><span>Deposit</span><strong>€50</strong></li><li><span>Battery</span><strong>1 large battery</strong></li><li><span>Charging time</span><strong>Approx. 6 hours</strong></li></ul><button class="button button-dark enquire-button" type="button" data-bike="ChamRider DTS425">Enquire about ChamRider ↗</button></div>
+          </article>
+        </div>
+        <p class="rental-note">The rental period for the displayed prices must be confirmed with E-Wheels. A valid driving licence is required. *Please confirm model-specific charging details before your rental.</p>
       </div>
     </section>
 
-    <section class="benefits" id="benefits"><div class="benefits-inner"><div class="section-kicker">Included with your rental</div><h2 class="benefits-heading">Little extras.<br>A smoother ride.</h2><div class="benefits-grid">
-      <article class="benefit"><div class="benefit-icon" aria-hidden="true">▣</div><h3>Mobile holder</h3><p>Keep your phone handy for your route and navigation.</p></article>
-      <article class="benefit"><div class="benefit-icon" aria-hidden="true">⌑</div><h3>Chain lock</h3><p>A chain lock is included with your rental.</p></article>
-      <article class="benefit"><div class="benefit-icon" aria-hidden="true">◉</div><h3>Flat-tire repair</h3><p>Free repair support for up to two occurrences.</p></article>
-      <article class="benefit"><div class="benefit-icon" aria-hidden="true">＋</div><h3>Brake-pad replacement</h3><p>Brake-pad replacement is included free.</p></article>
-    </div><p class="small-print"><strong>Before you ride:</strong> a valid driving licence is required. Please confirm availability, rental duration, and the final terms with us before booking.</p></div></section>
+    <section class="feature-promo" aria-label="Ride with more freedom">
+      <div class="wrap"><div class="promo-panel reveal"><div class="promo-copy"><p class="section-kicker">Your city, your pace</p><h2>Less planning.<br>More exploring.</h2><p>Make a day of it, take the scenic route and discover more of Riga on two wheels. Choose your preferred model and ask us which dates are available.</p><a href="#contact" class="button button-dark">Plan your ride ↗</a></div><div class="promo-art" aria-hidden="true"><div class="promo-orb">↗</div></div></div></div>
+    </section>
 
-    <section class="referral" id="referral"><div class="referral-inner"><div><div class="eyebrow">Share the ride</div><h2>Bring your crew.<br>Earn a reward.</h2><p class="referral-copy">Refer more than seven bikes and receive €100 off your rent. Contact E-Wheels to confirm the referral details and how the reward applies.</p><a class="button button-lime" href="#contact">Ask about referrals ↗</a></div><div class="referral-card"><div class="eyebrow">E-Wheels referral programme</div><div class="reward">€100</div><p>off your rent when you refer more than seven bikes.</p></div></div></section>
+    <section class="benefits-section" id="benefits">
+      <div class="wrap"><div class="section-heading-row reveal"><div><p class="section-kicker">Included with your rental</p><h2 class="section-title">The useful extras<br>are already thought of.</h2></div><p class="section-copy">Small details that help make your ride easier. Please confirm the final rental conditions when you enquire.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card reveal"><div class="benefit-icon">▣</div><h3>Mobile holder</h3><p>Keep your phone handy for maps and directions.</p></article>
+          <article class="benefit-card reveal reveal-delay-1"><div class="benefit-icon">⌑</div><h3>Chain lock</h3><p>A chain lock is included with the rental.</p></article>
+          <article class="benefit-card reveal reveal-delay-2"><div class="benefit-icon">◉</div><h3>Flat-tire repair</h3><p>Flat-tire repair is included free for up to two times.</p></article>
+          <article class="benefit-card reveal reveal-delay-3"><div class="benefit-icon">＋</div><h3>Brake-pad replacement</h3><p>Brake-pad replacement is included free.</p></article>
+        </div><p class="fineprint">A valid driving licence is required. Ask E-Wheels to confirm rental duration, payment, deposit-return conditions and availability before booking.</p>
+      </div>
+    </section>
 
-    <section class="contact-section" id="contact"><div class="section contact-grid"><div class="contact-aside"><div class="section-kicker">Let's get you rolling</div><h2>Tell us what<br>you need.</h2><p>Choose a bike, share your preferred date, and send an inquiry. We’ll be able to review the details you include and confirm availability when you contact us.</p><div class="contact-note"><strong>Rental reminder</strong><br>A valid driving licence is required. Your booking is not confirmed until you receive confirmation from E-Wheels.</div></div>
-      <form class="form-card" id="inquiryForm">
-        <div class="field"><label for="customerName">Customer name *</label><input id="customerName" name="customerName" autocomplete="name" placeholder="Your full name" required></div>
-        <div class="field"><label for="customerEmail">Email address *</label><input id="customerEmail" name="customerEmail" type="email" autocomplete="email" placeholder="you@example.com" required></div>
-        <div class="field"><label for="customerPhone">Phone / WhatsApp</label><input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" placeholder="+371 …"></div>
-        <div class="field"><label for="bikeChoice">Bike of interest *</label><select id="bikeChoice" name="bikeChoice" required><option value="">Choose a bike</option><option value="ENGWE EP-2 Pro — €140">ENGWE EP-2 Pro — €140</option><option value="VITILAN V3 — €140">VITILAN V3 — €140</option><option value="ChamRider DTS425 — €150">ChamRider DTS425 — €150</option><option value="Not sure yet — please advise">Not sure yet — please advise</option></select></div>
-        <div class="field"><label for="startDate">Preferred start date</label><input id="startDate" name="startDate" type="date"></div>
-        <div class="field"><label for="duration">Rental duration</label><select id="duration" name="duration"><option value="">Choose duration</option><option>1 day</option><option>2–3 days</option><option>4–7 days</option><option>More than a week</option><option>Not decided yet</option></select></div>
-        <div class="field full"><label for="message">Message / questions</label><textarea id="message" name="message" placeholder="Tell us your preferred dates or ask a question…"></textarea></div>
-        <div class="field full"><label class="checkbox-line"><input type="checkbox" id="licenceConfirm" name="licenceConfirm" required><span>I understand that a valid driving licence is required. *</span></label></div>
-        <p class="form-help">This is a static GitHub Pages website. The form prepares an email draft or copies your inquiry; it does not silently submit or store your information.</p>
-        <div class="form-actions"><button class="button button-dark" type="submit">Prepare email inquiry ↗</button><button class="button button-lime" type="button" id="copyInquiry">Copy inquiry details</button></div>
+    <section class="referral-section" id="referral"><div class="wrap"><div class="referral-panel reveal"><div><p class="eyebrow">Pass the freedom along</p><h2>Bring more riders.<br>Unlock a reward.</h2><p>Refer more than seven bikes and receive €100 off your rent. Contact E-Wheels before making a referral so the eligibility and details can be confirmed.</p><a class="button button-lime" href="#contact" data-select-purpose="Referral programme">Ask about the referral programme ↗</a></div><div class="reward-card"><div class="reward-kicker">E-Wheels referral reward</div><div class="reward-amount">€100</div><p>off your rent when you refer more than seven bikes.</p></div></div></div></section>
+
+    <section class="faq-section" id="faq"><div class="wrap faq-layout"><div class="reveal"><p class="section-kicker">Quick answers</p><h2 class="section-title">Good questions.<br>Clear answers.</h2><p class="faq-lead">Need anything else? Send an enquiry and we’ll help you confirm the details before you ride.</p></div><div class="faq-list reveal reveal-delay-1">
+      <details class="faq-item"><summary>Which bikes can I rent?</summary><div class="faq-answer"><p>ENGWE EP-2 Pro (€140), VITILAN V3 (€140) and ChamRider DTS425 (€150). They are listed as three separate models.</p></div></details>
+      <details class="faq-item"><summary>What is the deposit?</summary><div class="faq-answer"><p>The listed deposit is €50 per bike. Confirm how and when the deposit is returned before rental.</p></div></details>
+      <details class="faq-item"><summary>What is included with ENGWE and VITILAN?</summary><div class="faq-answer"><p>Both are listed with a free extra battery and an approximate charging time of five hours. Confirm the exact model information with E-Wheels.</p></div></details>
+      <details class="faq-item"><summary>How long does a rental last?</summary><div class="faq-answer"><p>The rental period for the displayed price has not been specified here. Contact E-Wheels to confirm the duration, total cost and availability.</p></div></details>
+      <details class="faq-item"><summary>How do I reserve a bike?</summary><div class="faq-answer"><p>Choose your preferred bike and complete the inquiry form. It prepares a message in WhatsApp; your booking is not confirmed until E-Wheels responds and agrees the details.</p></div></details>
+      <details class="faq-item"><summary>Do I need a driving licence?</summary><div class="faq-answer"><p>Yes. A valid driving licence is required for the rental.</p></div></details>
+    </div></div></section>
+
+    <section class="contact-section" id="contact"><div class="wrap contact-layout"><div class="reveal"><p class="eyebrow" style="color:#777b38">Let's plan your ride</p><h2>Your next ride<br>starts here.</h2><p class="contact-lead">Tell us which bike you’re interested in and when you’d like to ride. We’ll prepare a WhatsApp message so you can ask about availability and rental terms directly.</p><a class="button button-dark" href="https://wa.me/37125627003" target="_blank" rel="noopener noreferrer">Open WhatsApp directly ↗</a><div class="contact-details"><div><span>Business</span>E-Wheels Electric Bike Rentals</div><div><span>Location</span>Riga, Latvia</div><div><span>WhatsApp</span><a href="https://wa.me/37125627003" target="_blank" rel="noopener noreferrer">+371 25627003</a></div></div></div>
+      <form class="contact-form reveal reveal-delay-1" id="enquiryForm"><h3>Make an enquiry.</h3><p class="form-note">Fill in your details to prepare a message. WhatsApp opens so you can review and send it yourself.</p>
+        <div class="field-grid">
+          <div class="field"><label for="customerName">Customer name *</label><input id="customerName" name="customerName" type="text" autocomplete="name" placeholder="Your full name" required></div>
+          <div class="field"><label for="customerPhone">Phone / WhatsApp</label><input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" placeholder="+371 …"></div>
+          <div class="field full"><label for="bikeChoice">Bike you are interested in *</label><select id="bikeChoice" name="bikeChoice" required><option value="ENGWE EP-2 Pro — €140">ENGWE EP-2 Pro — €140</option><option value="VITILAN V3 — €140">VITILAN V3 — €140</option><option value="ChamRider DTS425 — €150">ChamRider DTS425 — €150</option><option value="Referral programme">Referral programme</option><option value="General question">General question</option></select></div>
+          <div class="field"><label for="startDate">Preferred start date</label><input id="startDate" name="startDate" type="date"></div>
+          <div class="field"><label for="rentalPeriod">Rental duration</label><input id="rentalPeriod" name="rentalPeriod" type="text" placeholder="e.g. 1 week"></div>
+          <div class="field full"><label for="message">Your message</label><textarea id="message" name="message" placeholder="Ask about availability, pricing or rental terms…"></textarea></div>
+        </div>
+        <label class="checkbox-row"><input type="checkbox" id="licenceConfirmed" required><span>I understand that a valid driving licence is required and that submitting this inquiry does not confirm a booking.</span></label>
+        <button class="button button-dark" type="submit">Continue in WhatsApp ↗</button><div class="form-result" id="formResult" role="status" aria-live="polite"></div><p class="form-fineprint">Your details are used to draft the message in WhatsApp. This page does not store your submission.</p>
       </form>
     </div></section>
   </main>
 
-  <footer class="footer"><div class="footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">↗</span><span>E-WHEELS</span></a><div class="copyright">© <span id="year"></span> E-Wheels · Riga, Latvia</div><div class="footer-links"><a href="#bikes">Our bikes</a><a href="#referral">Referral</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a></div></div></footer>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">↗</span><span class="brand-word">E-<span>WHEELS</span></span></a><nav class="footer-links" aria-label="Footer navigation"><a href="#bikes">Our bikes</a><a href="#benefits">What's included</a><a href="#referral">Referral</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div><div class="footer-bottom"><span>© <span id="currentYear"></span> E-Wheels · Riga, Latvia</span><span>Rental terms and availability are confirmed directly with E-Wheels.</span><a class="back-top" href="#home">Back to top ↑</a></div></div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-  (() => {
-    'use strict';
-    const slides = [...document.querySelectorAll('.slide')];
-    const tabs = [...document.querySelectorAll('.slide-tab')];
-    const toast = document.getElementById('toast');
-    const navLinks = document.getElementById('navLinks');
-    const menuToggle = document.getElementById('menuToggle');
-    const bikeSelect = document.getElementById('bikeChoice');
-    const form = document.getElementById('inquiryForm');
-    let activeSlide = 0;
-    let carouselTimer = null;
-    let toastTimer = null;
+    (() => {
+      'use strict';
+      const WHATSAPP_NUMBER = '37125627003';
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const viewport = document.getElementById('heroViewport');
+      const slides = Array.from(document.querySelectorAll('.hero-slide'));
+      const tabs = Array.from(document.querySelectorAll('.hero-tab'));
+      const counter = document.getElementById('slideCounter');
+      const pauseButton = document.getElementById('sliderPause');
+      const progressBar = document.getElementById('progressBar');
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      const bikeChoice = document.getElementById('bikeChoice');
+      const formResult = document.getElementById('formResult');
+      const toast = document.getElementById('toast');
+      let activeIndex = 0;
+      let rotationTimer = null;
+      let isPaused = reducedMotion;
+      let toastTimer = null;
+      let pointerStartX = null;
 
-    // Update this value to the real business inbox before publishing.
-    const BUSINESS_EMAIL = 'info@ewheelsrental.page';
-
-    function notify(message) {
-      toast.textContent = message;
-      toast.classList.add('show');
-      window.clearTimeout(toastTimer);
-      toastTimer = window.setTimeout(() => toast.classList.remove('show'), 3600);
-    }
-
-    function showSlide(index) {
-      activeSlide = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => {
-        const selected = i === activeSlide;
-        slide.classList.toggle('active', selected);
-        slide.setAttribute('aria-hidden', String(!selected));
-        slide.querySelectorAll('a, button').forEach(el => { el.tabIndex = selected ? 0 : -1; });
-      });
-      tabs.forEach((tab, i) => tab.setAttribute('aria-pressed', String(i === activeSlide)));
-    }
-    function stopCarousel() { if (carouselTimer) window.clearInterval(carouselTimer); carouselTimer = null; }
-    function startCarousel() {
-      stopCarousel();
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.hidden) return;
-      carouselTimer = window.setInterval(() => showSlide(activeSlide + 1), 6500);
-    }
-    tabs.forEach(tab => tab.addEventListener('click', () => { showSlide(Number(tab.dataset.go)); startCarousel(); }));
-    document.getElementById('prevSlide').addEventListener('click', () => { showSlide(activeSlide - 1); startCarousel(); });
-    document.getElementById('nextSlide').addEventListener('click', () => { showSlide(activeSlide + 1); startCarousel(); });
-    const showcase = document.getElementById('showcase');
-    showcase.addEventListener('mouseenter', stopCarousel);
-    showcase.addEventListener('mouseleave', startCarousel);
-    showcase.addEventListener('focusin', stopCarousel);
-    showcase.addEventListener('focusout', startCarousel);
-    document.addEventListener('visibilitychange', () => document.hidden ? stopCarousel() : startCarousel());
-    // Swipe support for phones and tablets.
-    let touchX = null;
-    showcase.addEventListener('touchstart', event => { touchX = event.changedTouches[0].clientX; }, { passive: true });
-    showcase.addEventListener('touchend', event => {
-      if (touchX === null) return;
-      const dx = event.changedTouches[0].clientX - touchX;
-      if (Math.abs(dx) > 55) showSlide(activeSlide + (dx < 0 ? 1 : -1));
-      touchX = null;
-    }, { passive: true });
-
-    menuToggle.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-      menuToggle.textContent = open ? '×' : '☰';
-      document.body.classList.toggle('menu-open', open);
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Open navigation menu');
-      menuToggle.textContent = '☰';
-      document.body.classList.remove('menu-open');
-    }));
-
-    function bikeValue(name) {
-      if (name.startsWith('ENGWE')) return 'ENGWE EP-2 Pro — €140';
-      if (name.startsWith('VITILAN')) return 'VITILAN V3 — €140';
-      if (name.startsWith('ChamRider')) return 'ChamRider DTS425 — €150';
-      return 'Not sure yet — please advise';
-    }
-    document.querySelectorAll('.inquire-bike, [data-bike-link]').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        const name = trigger.dataset.bike || trigger.dataset.bikeLink || '';
-        bikeSelect.value = bikeValue(name);
-      });
-    });
-
-    function buildInquiry() {
-      const data = new FormData(form);
-      return [
-        'Hello E-Wheels,', '', 'I would like to inquire about an e-bike rental.', '',
-        `Customer name: ${data.get('customerName') || ''}`,
-        `Email: ${data.get('customerEmail') || ''}`,
-        `Phone / WhatsApp: ${data.get('customerPhone') || 'Not provided'}`,
-        `Bike: ${data.get('bikeChoice') || 'Not selected'}`,
-        `Preferred start date: ${data.get('startDate') || 'Not specified'}`,
-        `Rental duration: ${data.get('duration') || 'Not specified'}`, '',
-        'Message / questions:', data.get('message') || 'No additional message', '',
-        'Please let me know about availability and final rental terms.', '', 'Thank you.'
-      ].join('\n');
-    }
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const subject = `E-Wheels rental inquiry — ${bikeSelect.value}`;
-      const mailto = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(buildInquiry())}`;
-      notify('Opening an email draft. Check the recipient and send it from your email app.');
-      window.location.href = mailto;
-    });
-    document.getElementById('copyInquiry').addEventListener('click', async () => {
-      if (!form.reportValidity()) return;
-      const inquiry = `To: ${BUSINESS_EMAIL}\nSubject: E-Wheels rental inquiry — ${bikeSelect.value}\n\n${buildInquiry()}`;
-      try {
-        await navigator.clipboard.writeText(inquiry);
-        notify('Inquiry copied. Paste it into your email or messaging app.');
-      } catch (error) {
-        const temp = document.createElement('textarea');
-        temp.value = inquiry; temp.setAttribute('readonly', '');
-        temp.style.position = 'fixed'; temp.style.opacity = '0';
-        document.body.appendChild(temp); temp.select();
-        const copied = document.execCommand('copy'); temp.remove();
-        notify(copied ? 'Inquiry copied. Paste it into your email or messaging app.' : 'Copy was blocked by the browser. Please select and copy the form details manually.');
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      const startDate = document.getElementById('startDate');
+      if (startDate) {
+        const now = new Date();
+        startDate.min = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
       }
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-    showSlide(0);
-    startCarousel();
-  })();
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => toast.classList.remove('show'), 2800);
+      }
+      function restartProgress() {
+        if (!progressBar) return;
+        progressBar.style.animation = 'none';
+        void progressBar.offsetWidth;
+        progressBar.style.animation = '';
+        if (isPaused || reducedMotion) progressBar.style.animationPlayState = 'paused';
+        else progressBar.style.animationPlayState = 'running';
+      }
+      function showSlide(index, userAction = false) {
+        activeIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const current = i === activeIndex;
+          slide.classList.toggle('active', current);
+          slide.setAttribute('aria-hidden', current ? 'false' : 'true');
+          if (current) slide.removeAttribute('inert'); else slide.setAttribute('inert', '');
+        });
+        tabs.forEach((tab, i) => tab.setAttribute('aria-pressed', i === activeIndex ? 'true' : 'false'));
+        counter.textContent = `0${activeIndex + 1} / 0${slides.length}`;
+        restartProgress();
+        if (userAction) restartRotation();
+      }
+      function stopRotation() {
+        if (rotationTimer) window.clearInterval(rotationTimer);
+        rotationTimer = null;
+        viewport.classList.remove('running');
+      }
+      function startRotation() {
+        stopRotation();
+        if (isPaused || reducedMotion || document.hidden) return;
+        viewport.classList.add('running');
+        restartProgress();
+        rotationTimer = window.setInterval(() => showSlide(activeIndex + 1), 6500);
+      }
+      function restartRotation() { if (!isPaused && !reducedMotion) startRotation(); }
+      function setPaused(paused) {
+        isPaused = paused;
+        pauseButton.setAttribute('aria-pressed', String(paused));
+        pauseButton.setAttribute('aria-label', paused ? 'Resume automatic slide rotation' : 'Pause automatic slide rotation');
+        pauseButton.textContent = paused ? '▶ Play' : 'Ⅱ Pause';
+        if (paused) { stopRotation(); progressBar.style.animationPlayState = 'paused'; }
+        else startRotation();
+      }
+      tabs.forEach(tab => tab.addEventListener('click', () => showSlide(Number(tab.dataset.go), true)));
+      document.getElementById('prevSlide').addEventListener('click', () => showSlide(activeIndex - 1, true));
+      document.getElementById('nextSlide').addEventListener('click', () => showSlide(activeIndex + 1, true));
+      pauseButton.addEventListener('click', () => setPaused(!isPaused));
+      viewport.addEventListener('mouseenter', stopRotation);
+      viewport.addEventListener('mouseleave', startRotation);
+      viewport.addEventListener('focusin', stopRotation);
+      viewport.addEventListener('focusout', startRotation);
+      document.addEventListener('visibilitychange', () => document.hidden ? stopRotation() : startRotation());
+      viewport.addEventListener('touchstart', event => { pointerStartX = event.changedTouches[0].clientX; }, { passive: true });
+      viewport.addEventListener('touchend', event => {
+        if (pointerStartX === null) return;
+        const delta = event.changedTouches[0].clientX - pointerStartX;
+        if (Math.abs(delta) > 55) showSlide(activeIndex + (delta < 0 ? 1 : -1), true);
+        pointerStartX = null;
+      }, { passive: true });
+      if (!reducedMotion) startRotation(); else { pauseButton.textContent = '▶ Play'; pauseButton.setAttribute('aria-pressed', 'true'); }
+
+      // Images first load from the website; if that fails, retry using the repository's raw asset URL.
+      document.querySelectorAll('img[data-fallback]').forEach(img => {
+        img.addEventListener('error', () => {
+          if (img.dataset.fallbackTried !== 'true') {
+            img.dataset.fallbackTried = 'true';
+            img.src = img.dataset.fallback;
+            return;
+          }
+          const visual = img.closest('.bike-visual, .product-art');
+          if (visual) visual.classList.add('image-failed');
+        });
+        // Handle cached failure state in browsers that have already resolved the URL.
+        if (img.complete && img.naturalWidth === 0) img.dispatchEvent(new Event('error'));
+      });
+
+      function closeMenu() {
+        navLinks.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation');
+        menuToggle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+      }
+      menuToggle.addEventListener('click', () => {
+        const opening = !navLinks.classList.contains('open');
+        navLinks.classList.toggle('open', opening);
+        document.body.classList.toggle('menu-open', opening);
+        menuToggle.setAttribute('aria-expanded', String(opening));
+        menuToggle.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation');
+        menuToggle.innerHTML = opening ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>' : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+      });
+      navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') closeMenu();
+        if (event.altKey && event.key === 'ArrowRight') showSlide(activeIndex + 1, true);
+        if (event.altKey && event.key === 'ArrowLeft') showSlide(activeIndex - 1, true);
+      });
+
+      function chooseBike(bike) {
+        if (!bikeChoice || !bike) return;
+        const match = Array.from(bikeChoice.options).find(option => option.value.toLowerCase().startsWith(bike.toLowerCase()));
+        if (match) bikeChoice.value = match.value;
+        else if (bike.toLowerCase().includes('referral')) bikeChoice.value = 'Referral programme';
+        else bikeChoice.value = 'General question';
+      }
+      document.querySelectorAll('[data-bike]').forEach(button => {
+        button.addEventListener('click', () => chooseBike(button.dataset.bike));
+      });
+      document.querySelectorAll('[data-select-purpose]').forEach(button => {
+        button.addEventListener('click', () => chooseBike(button.dataset.selectPurpose));
+      });
+
+      const form = document.getElementById('enquiryForm');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const data = new FormData(form);
+        const message = [
+          'Hello E-Wheels, I would like to make a rental enquiry.', '',
+          `Customer name: ${data.get('customerName') || 'Not provided'}`,
+          `Phone / WhatsApp: ${data.get('customerPhone') || 'Not provided'}`,
+          `Bike: ${data.get('bikeChoice') || 'Not specified'}`,
+          `Preferred start date: ${data.get('startDate') || 'Not specified'}`,
+          `Rental duration: ${data.get('rentalPeriod') || 'Not specified'}`,
+          '', `Message: ${data.get('message') || 'No additional message'}`,
+          '', 'Please confirm availability, rental duration, price and deposit conditions. Thank you.'
+        ].join('\n');
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+        formResult.innerHTML = `Your message is ready. <a href="${url}" target="_blank" rel="noopener noreferrer">Open WhatsApp to review and send it ↗</a>`;
+        formResult.classList.add('show');
+        window.open(url, '_blank', 'noopener,noreferrer');
+        showToast('If WhatsApp did not open, use the link below to continue.');
+      });
+
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+          });
+        }, { threshold: 0.13, rootMargin: '0px 0px -35px 0px' });
+        revealItems.forEach(item => observer.observe(item));
+      } else revealItems.forEach(item => item.classList.add('is-visible'));
+    })();
   </script>
 </body>
 </html>
